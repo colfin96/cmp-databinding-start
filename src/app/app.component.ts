@@ -16,7 +16,7 @@ export class AppComponent {
     });
   }
 
-  onBlueprintAdded(blueprintData: {blueprintName: string, blueprintContent: string}) {
+  onBlueprintAdded(blueprintData: { blueprintName: string, blueprintContent: string }) {
     this.serverElements.push({
       type: 'blueprint',
       name: blueprintData.blueprintName,
@@ -24,11 +24,11 @@ export class AppComponent {
     });
   }
 
-  onChangeFirst(){
+  onChangeFirst() {
     this.serverElements[0].name = 'Changed';
   }
 
-  onDestroyFirst(){
+  onDestroyFirst() {
     this.serverElements.splice(0, 1);
   }
 }
